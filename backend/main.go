@@ -1,17 +1,25 @@
 package main
 
-import (
-    "log"
+import "fmt"
 
-    "github.com/gofiber/fiber/v2"
-)
+// import (
+//     "log"
 
-func main() {
-    app := fiber.New()
+//     "github.com/gofiber/fiber/v2"
+// )
 
-    app.Get("/api", func (c *fiber.Ctx) error {
-        return c.SendString("Hello, Backend Server")
-    })
+// func main() {
+//     app := fiber.New()
 
-    log.Fatal(app.Listen(":3000"))
+//     app.Get("/", func (c *fiber.Ctx) error {
+//         return c.SendString("Hello, Backend Server")
+//     })
+
+//     log.Fatal(app.Listen(":3000"))
+// }
+
+
+func main(){
+    
+  
 }
