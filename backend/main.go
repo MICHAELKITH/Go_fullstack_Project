@@ -1,7 +1,5 @@
 package main
 
-import "fmt"
-
 import (
     "log"
 
@@ -11,7 +9,7 @@ import (
 func main() {
     app := fiber.New()
 
-    app.Get("/home", func (c *fiber.Ctx) error {
+    app.Get("/", func (c *fiber.Ctx) error {
         return c.SendString("Hello, Backend Server")
     })
 
